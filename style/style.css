@@ -1,5 +1,151 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1 px solid black;
+
+}
+
+body {
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.header-top {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 30px;
+  background-color: rgb(97, 191, 214);
+}
+
+.body-section-one {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    'cont1 cont1 cont2'
+    'cont1 cont1 cont3';
+  gap: 5px;
+}
+
+.section-grid-one {
+  grid-area: cont1;
+  height: 20rem;
+  background-color: antiquewhite;
+}
+
+.section-grid-two {
+  grid-area: cont2;
+  background-color: yellowgreen;
+}
+
+.section-grid-three {
+  background-color: yellow;
+  grid-area: cont3;
+}
+
+main {
+  width: 75%;
+  min-width: 1030px;
+  margin: auto;
+}
+
+.article-grid-one,
+.article-grid-two,
+.article-grid-four {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.article-grid-one>*,
+.article-grid-two>*,
+.article-grid-four>* {
+  background-color: thistle;
+  height: 15rem;
+}
+
+.article-grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.article-grid-three>* {
+  background-color: violet;
+  height: 25rem;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 10vh;
+}
+
+@media screen and (max-width: 1025px) {
+  main {
+    min-width: 750px;
+  }
+
+  .article-grid-one,
+  .article-grid-two,
+  .article-grid-four {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+
+  .article-grid-two div:nth-child(4) {
+    display: none;
+  }
+
+  .article-grid-three {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+
+  .body-section-one {
+    display: grid;
+    grid-template-areas:
+      'cont1 '
+      'cont2'
+      'cont3';
+    gap: 5px;
+  }
+
+  .section-grid-one {
+    grid-area: cont1;
+    height: 10rem;
+    background-color: antiquewhite;
+  }
+
+  .section-grid-two {
+    grid-area: cont2;
+    height: 10rem;
+    background-color: yellowgreen;
+  }
+
+  .section-grid-three {
+    background-color: yellow;
+    height: 10rem;
+    grid-area: cont3;
+  }
+
+  .article-grid-one,
+  .article-grid-two,
+  .article-grid-three,
+  .article-grid-four {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
 }
