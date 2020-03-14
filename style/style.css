@@ -22,7 +22,7 @@ header {
   background-color: rgb(97, 191, 214);
 }
 
-.body-section-one {
+section {
   width: 100%;
   display: grid;
   grid-template-areas:
@@ -31,18 +31,18 @@ header {
   gap: 5px;
 }
 
-.section-grid-one {
+.section-item-one {
   grid-area: cont1;
   height: 20rem;
   background-color: antiquewhite;
 }
 
-.section-grid-two {
+.section-item-two {
   grid-area: cont2;
   background-color: yellowgreen;
 }
 
-.section-grid-three {
+.section-item-three {
   background-color: yellow;
   grid-area: cont3;
 }
@@ -53,29 +53,25 @@ main {
   margin: auto;
 }
 
-.article-grid-one,
-.article-grid-two,
-.article-grid-four {
+.grid-four-col {
   margin: 10px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
 }
 
-.article-grid-one>*,
-.article-grid-two>*,
-.article-grid-four>* {
+.grid-four-col>* {
   background-color: thistle;
   height: 15rem;
 }
 
-.article-grid-three {
+.grid-three-col {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
 }
 
-.article-grid-three>* {
+.grid-three-col>* {
   background-color: violet;
   height: 25rem;
 }
@@ -90,20 +86,18 @@ footer {
     min-width: 750px;
   }
 
-  .article-grid-one,
-  .article-grid-two,
-  .article-grid-four {
+  .grid-four-col {
     margin: 10px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
   }
 
-  .article-grid-two div:nth-child(4) {
+  .article-two div:nth-child(4) {
     display: none;
   }
 
-  .article-grid-three {
+  .grid-three-col {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
@@ -113,7 +107,7 @@ footer {
 @media screen and (max-width: 760px) {
 
 
-  .body-section-one {
+  section {
     display: grid;
     grid-template-areas:
       'cont1 '
@@ -122,28 +116,26 @@ footer {
     gap: 5px;
   }
 
-  .section-grid-one {
+  .section-item-one {
     grid-area: cont1;
     height: 10rem;
     background-color: antiquewhite;
   }
 
-  .section-grid-two {
+  .section-item-two {
     grid-area: cont2;
     height: 10rem;
     background-color: yellowgreen;
   }
 
-  .section-grid-three {
+  .section-item-three {
     background-color: yellow;
     height: 10rem;
     grid-area: cont3;
   }
 
-  .article-grid-one,
-  .article-grid-two,
-  .article-grid-three,
-  .article-grid-four {
+  .grid-three-col,
+  .grid-four-col {
     display: grid;
     grid-template-columns: 1fr;
   }
