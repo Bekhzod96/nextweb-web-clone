@@ -25,11 +25,80 @@ h6 {
   padding: 10px;
 }
 
+.header-top-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-list-one {
+  display: flex;
+}
+
+.header-list-one li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.header-list-two {
+  display: flex;
+}
+
+.header-list-two li {
+  list-style: none;
+  margin-left: 10px;
+}
+
 header {
   position: sticky;
   top: 0;
-  padding: 30px;
-  background-color: rgb(97, 191, 214);
+  background-color: #fff;
+  z-index: 3;
+}
+
+.header-sticky {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-sticky-one {
+  display: flex;
+  align-items: center;
+}
+
+.header-sticky-list ul {
+  display: flex;
+}
+.header-sticky-list li {
+  list-style: none;
+  margin-left: 10px;
+  color: #aaa;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.header-tnw-logo img {
+  width: 100px;
+  padding: 10px;
+  height: 40px;
+  background-color: red;
+}
+
+.header-sticky-two {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-sticky-two div {
+  padding: 10px;
+  border-left: 1px solid gray;
+}
+
+.header-sticky-three {
+  width: 100%;
+  padding: 10px;
+  background-color: yellow;
 }
 
 section {
