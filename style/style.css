@@ -8,7 +8,6 @@
 a {
   color: white;
   text-decoration: none;
-
 }
 
 h6 {
@@ -37,8 +36,8 @@ section {
   width: 99%;
   display: grid;
   grid-template-areas:
-    'cont1  cont2'
-    'cont1  cont3';
+    "cont1  cont2"
+    "cont1  cont3";
   gap: 5px;
   margin: auto;
 }
@@ -71,7 +70,6 @@ section {
 .section-item-one-bottom i {
   margin-left: 10px;
 }
-
 
 .section-item-two {
   grid-area: cont2;
@@ -148,7 +146,7 @@ main {
   gap: 5px;
 }
 
-.grid-three-col>* {
+.grid-three-col > * {
   background-color: violet;
   height: 25rem;
 }
@@ -166,7 +164,7 @@ main {
 
 .article-one-item p,
 .article-one-item a {
-  color: #AAA;
+  color: #aaa;
   margin-right: 8px;
 }
 
@@ -193,7 +191,7 @@ main {
   font-size: 18px;
   color: #000;
   font-weight: bolder;
-  background: rgba(255, 68, 34, .08);
+  background: rgba(255, 68, 34, 0.08);
   padding: 10px 0 50px 90px;
   margin-bottom: 30px;
 }
@@ -221,12 +219,6 @@ main {
   padding: 15px 0;
   font-size: 12px;
   margin: 20px 0;
-
-}
-
-footer {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 10vh;
 }
 
 @media screen and (max-width: 1025px) {
@@ -286,9 +278,9 @@ footer {
   section {
     display: grid;
     grid-template-areas:
-      'cont1 '
-      'cont2'
-      'cont3';
+      "cont1 "
+      "cont2"
+      "cont3";
     gap: 5px;
   }
 
@@ -312,5 +304,91 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   }
+}
 
+.footer-row-one {
+  width: 100%;
+  background-color: #333;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-list-one {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-list-one li {
+  list-style: none;
+  padding: 10px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #555;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #555;
+}
+
+.footer-list-one li:hover {
+  background-color: #333;
+}
+
+.footer-list-two {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-list-two li {
+  list-style: none;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.footer-list-two li:hover {
+  color: #fff;
+}
+
+.footer-row-two {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  width: 100%;
+  height: 100px;
+}
+
+.footer-row-two-item {
+  width: 43%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-row-two-item span {
+  color: #aaa;
+}
+
+.footer-legal-logoTNW {
+  width: 50px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.footer-legal-logoStackPath {
+  width: 50px;
+  height: 35px;
+  cursor: pointer;
 }
