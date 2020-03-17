@@ -8,7 +8,6 @@
 a {
   color: white;
   text-decoration: none;
-
 }
 
 h6 {
@@ -20,27 +19,112 @@ h6 {
   flex-direction: column;
 }
 
+.fa-bars {
+  display: none;
+}
+
 .header-top {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #aaa;
   padding: 10px;
+}
+
+.header-top-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-list-one {
+  display: flex;
+}
+
+.header-list-one li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.header-list-two {
+  display: flex;
+}
+
+.header-list-two li {
+  list-style: none;
+  margin-left: 10px;
 }
 
 header {
   position: sticky;
   top: 0;
-  padding: 30px;
-  background-color: rgb(97, 191, 214);
+  background-color: #fff;
+  z-index: 3;
+}
+
+.header-sticky {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-sticky-one {
+  display: flex;
+  align-items: center;
+}
+
+.header-sticky-list ul {
+  display: flex;
+}
+
+.header-sticky-list li {
+  list-style: none;
+  margin-left: 10px;
+  color: #aaa;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.header-sticky-list li:hover {
+  cursor: pointer;
+  color: #222;
+}
+
+.header-top-item li:hover,
+.header-tnw-logo img:hover,
+.header-sticky-two div:hover {
+  cursor: pointer;
+  color: #aaa;
+}
+
+.header-tnw-logo img {
+  width: 100px;
+  padding: 10px;
+  height: 40px;
+  background-color: red;
+}
+
+.header-sticky-two {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-sticky-two div {
+  padding: 10px;
+  border-left: 1px solid gray;
+}
+
+.header-sticky-three {
+  padding: 10px;
+  background-color: yellow;
 }
 
 section {
-  width: 99%;
+  width: 100%;
   display: grid;
   grid-template-areas:
-    'cont1  cont2'
-    'cont1  cont3';
+    "cont1  cont2"
+    "cont1  cont3";
   gap: 5px;
-  margin: auto;
+
 }
 
 .section-item-one {
@@ -122,6 +206,10 @@ main {
   justify-content: space-between;
 }
 
+.main-title:hover {
+  cursor: pointer;
+}
+
 .main-title-smallscreen {
   display: none;
   font-size: 16px;
@@ -168,7 +256,7 @@ main {
 
 .article-one-item p,
 .article-one-item a {
-  color: #AAA;
+  color: #aaa;
   margin-right: 8px;
 }
 
@@ -208,7 +296,7 @@ main {
 .article-two-item p,
 .article-four-item p {
   font-size: 14px;
-  margin-top: 15px;
+  margin: 15px 0 10px 15px;
 }
 
 .article-two-item i {
@@ -226,7 +314,6 @@ main {
   font-size: 12px;
   margin: 20px 0;
 }
-
 
 .article-three-item-picture {
   height: 250px;
@@ -303,9 +390,92 @@ main {
   padding-right: 5px;
 }
 
-footer {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 10vh;
+.footer-box {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-row-one {
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-list-one {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-list-one li {
+  list-style: none;
+  padding: 10px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #555;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #555;
+}
+
+.footer-list-one li:hover {
+  background-color: #333;
+}
+
+.footer-list-two {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-list-two li {
+  list-style: none;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.footer-list-two li:hover {
+  color: #fff;
+}
+
+.footer-row-two {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  width: 100%;
+  padding: 10px;
+}
+
+.footer-row-two-item {
+  width: 43%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-row-two-item span {
+  color: #aaa;
+}
+
+.footer-legal-logoTNW {
+  width: 50px;
+  height: 12px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.footer-legal-logoStackPath {
+  width: 50px;
+  height: 35px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1025px) {
@@ -347,13 +517,23 @@ footer {
     min-width: 250px;
   }
 
+  .header-top,
+  .header-sticky-list,
+  .main-title-fully {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+
   main {
     width: 100%;
     min-width: 250px;
   }
 
-  .main-title-fully {
-    display: none;
+  .header-sticky-three {
+    text-align: center;
   }
 
   .main-title-smallscreen {
@@ -388,5 +568,4 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   }
-
 }
