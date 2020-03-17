@@ -72,7 +72,6 @@ section {
   margin-left: 10px;
 }
 
-
 .section-item-two {
   grid-area: cont2;
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Screenshot-2020-03-16-at-12.02.50-796x450.png);
@@ -145,23 +144,26 @@ main {
 .grid-three-col {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+  gap: 25px;
 }
 
-.grid-three-col>* {
-  background-color: violet;
-  height: 25rem;
-}
-
-.article-one-item img {
+.article-one-item img,
+.article-four-item img {
   cursor: pointer;
   width: 100%;
 }
 
-.article-one-item h1 {
+.article-one-item h1,
+.article-four h1 {
   font-weight: bolder;
   font-size: 16px;
-  margin: 6px 0;
+  margin: 8px 0 0;
+  color: #000;
+}
+
+.article-one-item h1:hover,
+.article-four-item h1:hover {
+  color: #f42;
 }
 
 .article-one-item p,
@@ -194,15 +196,17 @@ main {
   color: #000;
   font-weight: bolder;
   background: rgba(255, 68, 34, .08);
-  padding: 10px 0 50px 90px;
+  padding: 10px 0 15px 90px;
   margin-bottom: 30px;
 }
 
-.article-two-item a {
+.article-two-item a,
+.article-four-item a {
   color: #555;
 }
 
-.article-two-item p {
+.article-two-item p,
+.article-four-item p {
   font-size: 14px;
   margin-top: 15px;
 }
@@ -221,7 +225,82 @@ main {
   padding: 15px 0;
   font-size: 12px;
   margin: 20px 0;
+}
 
+
+.article-three-item-picture {
+  height: 250px;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-...-13-516x270.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  justify-content: flex-end;
+  color: white;
+  padding: 15px;
+}
+
+.article-three-item-picture h1 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.article-three-item-picture h2 {
+  font-weight: lighter;
+}
+
+.article-three-item-picture h3 {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6)
+}
+
+.article-three-item-middle {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(255, 68, 34, .06);
+  flex-direction: row;
+}
+
+.article-three-item-middle h1 {
+  padding: 15px;
+  color: #f42;
+  line-height: 1.5;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.article-three-item-middle-image {
+  width: 120px;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Screenshot-2020-03-16-at-12.02.50-478x270.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article-three-item ul {
+  padding: 0 20px;
+  line-height: 2;
+
+}
+
+.article-three-item ul a {
+  color: #555;
+}
+
+.article-three-item ul li {
+  border-bottom: 1px solid #AAA;
+  margin: 15px 0;
+  padding-bottom: 10px;
+  list-style: none;
+
+}
+
+.article-three-item ul li::before {
+  font-weight: bold;
+  display: inline-block;
+  content: "\2022";
+  color: #f42;
+  margin-left: -1em;
+  padding-right: 5px;
 }
 
 footer {
@@ -250,7 +329,6 @@ footer {
     margin: 10px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
   }
 
   .article-two div:nth-child(4) {
@@ -260,7 +338,6 @@ footer {
   .grid-three-col {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
   }
 }
 
@@ -289,7 +366,6 @@ footer {
       'cont1 '
       'cont2'
       'cont3';
-    gap: 5px;
   }
 
   .section-item-one {
