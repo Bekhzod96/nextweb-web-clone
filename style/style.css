@@ -83,16 +83,37 @@ header {
   font-weight: 500;
 }
 
+.footer-list-one li {
+  list-style: none;
+  padding: 10px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #555;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #555;
+}
+
+.footer-list-two li {
+  list-style: none;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.article-three-item ul li {
+  border-bottom: 1px solid #aaa;
+  margin: 15px 0;
+  padding-bottom: 10px;
+  list-style: none;
+}
+
 .header-sticky-list li:hover {
   cursor: pointer;
   color: #222;
-}
-
-.header-top-item li:hover,
-.header-tnw-logo img:hover,
-.header-sticky-two div:hover {
-  cursor: pointer;
-  color: #aaa;
 }
 
 .header-tnw-logo img {
@@ -102,14 +123,27 @@ header {
   background-color: red;
 }
 
-.header-sticky-two {
-  display: flex;
-  justify-content: space-between;
-}
-
 .header-sticky-two div {
   padding: 10px;
   border-left: 1px solid gray;
+}
+
+.article-one-item img,
+.article-four-item img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.header-top-item li:hover,
+.header-tnw-logo img:hover,
+.header-sticky-two div:hover {
+  cursor: pointer;
+  color: #aaa;
+}
+
+.header-sticky-two {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-sticky-three {
@@ -124,7 +158,6 @@ section {
     "cont1  cont2"
     "cont1  cont3";
   gap: 5px;
-
 }
 
 .section-item-one {
@@ -159,7 +192,6 @@ section {
 .section-item-two {
   grid-area: cont2;
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Screenshot-2020-03-16-at-12.02.50-796x450.png);
-  background-position: center;
   background-size: cover;
   background-position: 50%;
   justify-content: flex-end;
@@ -206,6 +238,14 @@ main {
   justify-content: space-between;
 }
 
+.article-two-item h1 {
+  font-size: 18px;
+  font-weight: bolder;
+  background: #f42;
+  color: #fff;
+  padding: 10px 0 10px 90px;
+}
+
 .main-title:hover {
   cursor: pointer;
 }
@@ -215,6 +255,17 @@ main {
   font-size: 16px;
   font-weight: lighter;
   line-height: 2;
+}
+
+.article-one-item p,
+.article-one-item a {
+  color: #aaa;
+  margin-right: 8px;
+}
+
+.article-two-item a,
+.article-four-item a {
+  color: #555;
 }
 
 .main-title h2 a {
@@ -235,12 +286,6 @@ main {
   gap: 25px;
 }
 
-.article-one-item img,
-.article-four-item img {
-  cursor: pointer;
-  width: 100%;
-}
-
 .article-one-item h1,
 .article-four h1 {
   font-weight: bolder;
@@ -249,15 +294,22 @@ main {
   color: #000;
 }
 
+.article-three-item-picture h1 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.article-three-item-middle h1 {
+  padding: 15px;
+  color: #f42;
+  line-height: 1.5;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
 .article-one-item h1:hover,
 .article-four-item h1:hover {
   color: #f42;
-}
-
-.article-one-item p,
-.article-one-item a {
-  color: #aaa;
-  margin-right: 8px;
 }
 
 .article-two-item {
@@ -271,26 +323,13 @@ main {
   left: 15px;
 }
 
-.article-two-item h1 {
-  font-size: 18px;
-  font-weight: bolder;
-  background: #f42;
-  color: #fff;
-  padding: 10px 0 10px 90px;
-}
-
 .article-two-item h2 {
   font-size: 18px;
   color: #000;
   font-weight: bolder;
-  background: rgba(255, 68, 34, .08);
+  background: rgba(255, 68, 34, 0.08);
   padding: 10px 0 15px 90px;
   margin-bottom: 30px;
-}
-
-.article-two-item a,
-.article-four-item a {
-  color: #555;
 }
 
 .article-two-item p,
@@ -301,6 +340,10 @@ main {
 
 .article-two-item i {
   margin-right: 10px;
+}
+
+.footer-row-two-item span {
+  color: #aaa;
 }
 
 .article-two-item h2 span {
@@ -326,33 +369,20 @@ main {
   padding: 15px;
 }
 
-.article-three-item-picture h1 {
-  font-size: 20px;
-  font-weight: bolder;
-}
-
 .article-three-item-picture h2 {
   font-weight: lighter;
 }
 
 .article-three-item-picture h3 {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.6)
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .article-three-item-middle {
   height: 100px;
   width: 100%;
-  background-color: rgba(255, 68, 34, .06);
+  background-color: rgba(255, 68, 34, 0.06);
   flex-direction: row;
-}
-
-.article-three-item-middle h1 {
-  padding: 15px;
-  color: #f42;
-  line-height: 1.5;
-  font-weight: bolder;
-  font-size: 14px;
 }
 
 .article-three-item-middle-image {
@@ -366,19 +396,10 @@ main {
 .article-three-item ul {
   padding: 0 20px;
   line-height: 2;
-
 }
 
 .article-three-item ul a {
   color: #555;
-}
-
-.article-three-item ul li {
-  border-bottom: 1px solid #AAA;
-  margin: 15px 0;
-  padding-bottom: 10px;
-  list-style: none;
-
 }
 
 .article-three-item ul li::before {
@@ -391,7 +412,6 @@ main {
 }
 
 .footer-box {
-  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -399,7 +419,6 @@ main {
 .footer-row-one {
   width: 100%;
   background-color: #333;
-  padding: 10px;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -408,19 +427,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.footer-list-one li {
-  list-style: none;
-  padding: 10px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-color: #555;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  border: 2px solid #555;
+  padding: 20px;
 }
 
 .footer-list-one li:hover {
@@ -431,14 +438,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.footer-list-two li {
-  list-style: none;
   padding: 10px;
-  margin-left: 10px;
-  cursor: pointer;
-  color: #aaa;
 }
 
 .footer-list-two li:hover {
@@ -450,7 +450,6 @@ main {
   justify-content: center;
   background-color: #222;
   width: 100%;
-  padding: 10px;
 }
 
 .footer-row-two-item {
@@ -459,10 +458,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-}
-
-.footer-row-two-item span {
-  color: #aaa;
+  padding: 10px;
 }
 
 .footer-legal-logoTNW {
@@ -512,11 +508,6 @@ main {
 }
 
 @media screen and (max-width: 760px) {
-  section {
-    width: 100%;
-    min-width: 250px;
-  }
-
   .header-top,
   .header-sticky-list,
   .main-title-fully {
@@ -527,7 +518,10 @@ main {
     display: block;
   }
 
-  main {
+  main,
+  header,
+  section,
+  footer {
     width: 100%;
     min-width: 250px;
   }
@@ -543,9 +537,9 @@ main {
   section {
     display: grid;
     grid-template-areas:
-      'cont1 '
-      'cont2'
-      'cont3';
+      "cont1 "
+      "cont2"
+      "cont3";
   }
 
   .section-item-one {
