@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-<!-- [Live Demo Link](https://rawcdn.githack.com/Bekhzod96/AppleClone/7a92875dd5e9c5b58a3d5b876a18007d246446be/index.html) -->
+[Live Demo Link](https://rawcdn.githack.com/Bekhzod96/theNextWeb/d3c0d784790e40d16899e252869040bb3d8ff14a/index.html)
 
 **Deployment**:+1:
 
